@@ -1,0 +1,6 @@
+(executables
+ (names send recv)
+ (libraries xsk core core_bench base_bigstring cstruct)
+ (ocamlopt_flags -O3)
+ (preprocess
+  (pps ppx_jane ppx_cstruct)))
